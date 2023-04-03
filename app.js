@@ -1,6 +1,6 @@
 
 const myGeoAPIKey = '8467611827b24b9cb87cd81aaf5480e2';
-const WEATHER_API_KEY = '03a95578d63bc695419f75ad78e74a94';
+const weather_key = '03a95578d63bc695419f75ad78e74a94';
 
 var lat = document.getElementById('lat');
 var lon = document.getElementById('lon');
@@ -40,7 +40,7 @@ function geocodeAddress(){
 
 function checkWeather(){
 
-    const weatherURL = `http://api.openweathermap.org/data/2.5/weather?lat=${w_lat}&lon=${w_lon}&appid=${WEATHER_API_KEY}`;
+    const weatherURL = `http://api.openweathermap.org/data/2.5/weather?lat=${w_lat}&lon=${w_lon}&appid=${weather_key}`;
 
     fetch(weatherURL).then(result => result.json()).then(data => {
         console.log(data);
