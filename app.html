@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Weather App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="autocomplete.css">
+</head>
+<body>
+
+	<div id="menu">
+		
+		<div id="menuBar">
+			<h3>Weather App Using OpenWeatherMap API And Geoapify API</h3>
+		</div>
+		
+	</div>
+
+	<div id="mainDiv">
+		
+
+		<div id="searchDiv">
+			<div class="autocomplete-container" id="autocomplete-container"></div>
+
+			<!-- <input id="address" type="text" placeholder="Enter Location Maually"> -->
+
+		</div>
+		
+	</div>
+		<button id="button"  onclick="geocodeAddress()">Search</button>
+
+	<div id="mainDiv">
+		<div id="resultDiv">
+
+			<header>RESULT</header>
+
+			<label>Location :- </label>
+			<input id="location" type="text" placeholder="Location">
+
+			<br>
+			<label>Lattitude :- </label>
+			<input id="lat" type="text" placeholder="Lattitude">
+
+			<br>
+			<label>Longitude :- </label>
+			<input id="lon" type="text" placeholder="Longitude">
+
+			<br>
+			<label>Temp :- </label>
+			<input id="temp" type="text" placeholder="Temp">
+
+			<br>
+			<label>Wind Deg:- </label>
+			<input id="wind" type="text" placeholder="Wind Deg">
+
+			<br>
+			<label>Wind Speed:- </label>
+			<input id="windspeed" type="text" placeholder="Wind Speed">
+
+			<br>
+			<label>Wind Gust:- </label>
+			<input id="windgust" type="text" placeholder="Wind Gust">
+			
+			<br>
+			<label>Humidity :- </label>
+			<input id="humidity" type="text" placeholder="Humidity">
+
+			<br>
+			<label>Pressure :- </label>
+			<input id="pressure" type="text" placeholder="Pressure">
+
+			<br>
+			<label>Max Temp In Celsius :- </label>
+			<input id="max_temp_celsius" type="text" placeholder="max_Temp_CELSIUS">
+
+			<br>
+			<label>Max Temp In Kelvin :- </label>
+			<input id="max_temp" type="text" placeholder="max_Temp_KELVIN">
+
+			<br>
+			<label>TimeZone :- </label>
+			<input id="timezone" type="text" placeholder="timezone">
+
+			<br>
+			<label>Visibility :- </label>
+			<input id="visibility" type="text" placeholder="visibility">
+
+			<br>
+			<label>Clouds :- </label>
+			<input id="clouds" type="text" placeholder="clouds">
+			
+		</div>
+		
+	</div>
+
+</body>
+	<script src="app.js"></script>
+	<script src="autocomplete.js"></script>
+</html>
