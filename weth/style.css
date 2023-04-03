@@ -1,0 +1,133 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body:hover{
+	background: rgb(81, 99, 116);
+	transition: 1.5s;
+}
+
+
+body{
+	background: rgb(92, 100, 109);
+	transition: 0.5s;
+	font: 16px;
+}
+
+#menuBar:hover{
+	width: 100%;
+	height: 60px;
+	border-radius: 0;
+	background: rgba(1.5, 1.5, 1.5, 0.52);
+	transition: 0.5s;
+}
+
+#menuBar{
+	width: 100%;
+	height: 20px;
+	border-radius: 0;
+	background: rgba(1.5, 1.5, 1.5, 0.52);
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+	color: aliceblue;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	position:static;
+}
+
+#menuBar h3{
+	visibility: hidden;
+	transition: 0.26s;
+}
+
+#menuBar:hover h3{
+	visibility: visible;
+	transition: 0.5s;
+}
+
+#mainDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+	border-radius: 12px;
+}
+
+#searchDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 80px;
+	border-radius: 10px;
+}
+
+space{
+	width: 25px;
+	height: 25px;
+}
+
+#resultDiv:hover{
+	border-radius: 10px;
+	background: rgba(1.5, 1.5, 1.5, 0.8);
+	border: 2px solid salmon;
+	transition: 0.5s;
+	lighting-color: antiquewhite;
+}
+
+#resultDiv{
+
+	width: 490px;
+	height: 600px;
+	border-radius: 10px;
+	background: rgba(1, 1, 1, 0.5);
+	transition: 0.51s;
+	border: 2px solid red;
+	border-style: dashed;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: aliceblue;
+}
+
+
+header{
+	margin-left: 135px;
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+
+label,input{
+	margin-left: 33px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+input{
+	border-radius: 5px;
+	background: black;
+	border: 1px solid white;
+	color: white;
+	height: 22px;
+	width: 200px;
+}
+
+button{
+	background: royalblue;
+	border: 1px solid salmon;
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+	transition: 0.4s;
+	font-size: large;
+	margin-left: 45%;
+}
+
+button:hover{
+	background: rgb(64, 96, 192);
+	border: 2px solid salmon;
+	border-radius: 5px;
+	transition: 0.3s;
+	color: aliceblue;
+}
+
